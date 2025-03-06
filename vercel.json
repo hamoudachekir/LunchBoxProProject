@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+        { "source": "/", "destination": "/index.html" },
+        { "source": "/produits", "destination": "/allproducts.html" },
+        { "source": "/produit-detail", "destination": "/detailproduct.html" },
+        { "source": "/personnaliser", "destination": "/personaliserproduit.html" }
+    ],
+    "cleanUrls": true
+}
