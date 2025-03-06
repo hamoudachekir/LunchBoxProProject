@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch && cp ./src/contact.css ./dist/contact.css && cp ./src/facture.css ./dist/facture.css",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify"
   },
   "keywords": [],
   "author": "",
@@ -13,4 +13,5 @@
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   }
+  
 }
