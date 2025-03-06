@@ -1,9 +1,13 @@
 {
-    "rewrites": [
-        { "source": "/", "destination": "/index.html" },
-        { "source": "/produits", "destination": "/allproducts.html" },
-        { "source": "/produit-detail", "destination": "/detailproduct.html" },
-        { "source": "/personnaliser", "destination": "/personaliserproduit.html" }
+    "builds": [
+        {
+            "src": "public/**/*",
+            "use": "@vercel/static"
+        }
     ],
-    "cleanUrls": true
+"routes": [
+    { "src": "/", "dest": "/public/home.html" },
+    { "src": "/images/(.*)", "dest": "/public/images/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+]
 }
